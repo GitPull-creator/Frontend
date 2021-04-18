@@ -6,70 +6,74 @@ body {
 /* Background */
 
 .container {
+    display: flex;
+    padding: 60px 40px;
     background-color: #eff6ff;
-    padding: 40px;
-    height: 1000px;
 }
 
-.main {
-    background-color: #fff;
-    height: 1000px;
-}
-
-.bg_image {
+.bg__img {
     position: relative;
-    float: left;
-    z-index: 0;
 }
 
-.logo_wrapper {
+.logo__img {
     position: absolute;
-    padding: 0 40px;
+    top: 104px;
+    left: 140px;
+    width: 128px;
     z-index: 1;
 }
 
-.logo_img {
-    width: 140px;
-    height: 100px;
+.bg-wrapper {
+    background-color: #fff;
+
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding-top: 90px;
+    padding-bottom: 0;
+    width: 50%;
+    background-color: #fff;
 }
 
 /* "Get" Header */
 
+.header1 {
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+
 .header {
-    margin: 0;
-    margin-left: 800px;
-    padding-top: 100px;
     font-weight: 500;
     font-size: 30px;
 }
 
 .subheader,
 .subheader_2 {
-    margin: 0;
-    margin-left: 800px;
-    margin-top: 8px;
     font-size: 15px;
     font-weight: 400;
     color: #7B8A92;
 }
 
 /* FB & IN Buttons */
+.buttons-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
 
-.fb_img,
-.In_img {
+
+.fb__img,
+.In__img {
     float: left;
     width: 20px;
     height: 38px;
     background-color: #255a9b;
 }
 
-.face_btn,
-.In_btn {
-    display: inline-block;
-    padding-left: 8px;
-    margin-left: 35px;
-    margin-bottom: 30px;
-    margin-top: 80px;
+.face__btn,
+.In__btn {
     width: 200px;
     border: none;
     line-height: 3;
@@ -78,19 +82,18 @@ body {
     cursor: pointer;
 }
 
-.In_img {
+.In__img {
     background-color: #0076b6;
 }
 
-.In_btn {
-    padding-left: 12px;
-    margin-left: 20px;
+.In__btn {
     background-color: #0076b6;
 }
 
 /* OR decoration */
 
 .decoration {
+    margin-bottom: 40px;
     overflow: hidden;
     text-align: center;
     font-size: 10px;
@@ -121,113 +124,87 @@ body {
 
 /* Email & tel input */
 
-.email_input,
-.phone_input {
-    padding: 10px;
-    padding-bottom: 5px;
-    margin-top: 40px;
-    margin-left: 35px;
+.forms-wrapper {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 40px;
+}
+
+.email__input,
+.phone__input {
     height: 25px;
     width: 170px;
     font-weight: 400;
     border: 1px solid #eeeeee;
 }
 
-.email_input:hover {
+.email__input:hover {
     border-left: 1px solid #3698fb;
 }
 
-.phone_input {
-    margin-left: 30px;
-}
 
-.phone_input:hover {
+.phone__input:hover {
     border-left: 1px solid #3698fb;
 }
 
 /* "What" header */
 
+.header2 {
+    margin-left: 50px;
+    margin-bottom: 65px;
+
+}
+
 .header_2 {
-    margin: 0;
-    margin-left: 800px;
-    margin-top: 85px;
     font-size: 23px;
     font-weight: 500;
 }
 
-.subheader_2 {
-    margin-bottom: 50px;
-}
 
 /* Radio Label */
 
-.radio_label_1,
-.radio_label_2,
-.radio_label_3,
-.radio_label_4 {
-    padding-left: 30px;
+.radio {
+    display: flex;
+    margin-left: 50px;
+    margin-bottom: 160px;
+}
+
+.radio__first,
+.radio__second,
+.radio__third,
+.radio__four {
+    margin-right: 30px;
     font-weight: 500;
     cursor: pointer;
 }
 
 /* Radio Individual */
 
-.hidden_1,
-.hidden_2,
-.hidden_3,
-.hidden_4 {
+.hidden__descr {
     display: none;
     position: absolute;
     padding: 10px;
     width: 255px;
-    top: 700px;
-    right: 240px;
+    top: 720px;
+    left: 855px;
     font-weight: 400;
     font-size: 15px;
     color: #7B8A92;
     box-shadow: 1px 5px 25px -2px rgb(0 0 0 / 20%);
 }
 
-.radio_label_1:hover .hidden_1 {
-    display: block;
-}
-
-/* Radio Business */
-
-.hidden_2 {
-    right: 167px;
-}
-
-.radio_label_2:hover .hidden_2 {
-    display: block;
-}
-
-/* Radio IRA */
-
-.hidden_3 {
-    right: 84px;
-}
-
-.radio_label_3:hover .hidden_3 {
-    display: block;
-}
-
-/* Radio Trust */
-
-.hidden_4 {
-    right: 51px;
-}
-
-.radio_label_4:hover .hidden_4 {
+.radio__first:hover .hidden__descr,
+.radio__second:hover .hidden__descr,
+.radio__third:hover .hidden__descr,
+.radio__four:hover .hidden__descr {
     display: block;
 }
 
 /* checkbox */
 
-.terms_wrapper {
-    margin-left: 800px;
-    margin-top: 140px;
-
+.terms-wrapper {
+    margin-left: 50px;
+    margin-bottom: 40px;
 }
 
 .terms {
@@ -238,34 +215,33 @@ body {
 
 /* checkbox link*/
 
-.terms_link {
+.terms__link {
     padding-left: 1px;
     font-weight: 300;
     font-size: 10px;
     color: #3698FB;
 }
 
-.terms_link:link {
+.terms__link:link {
     color: #3698FB;
 }
 
-.terms_link:visited {
+.terms__link:visited {
     color: purple;
 }
 
-.terms_link:hover {
+.terms__link:hover {
     color: #3698FB;
 }
 
-.terms_link:active {
+.terms__link:active {
     color: black
 }
 
 /* Create button */
 
-.create_btn {
-    margin-top: 65px;
-    margin-left: 40px;
+.create-btn {
+    margin-left: 50px;
     height: 40px;
     width: 200px;
     background-color: #3698fb;
