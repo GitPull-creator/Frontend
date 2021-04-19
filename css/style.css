@@ -11,28 +11,23 @@ body {
     background-color: #eff6ff;
 }
 
-.bg__img {
-    position: relative;
-}
 
-.logo__img {
-    position: absolute;
-    top: 104px;
-    left: 140px;
-    width: 128px;
-    z-index: 1;
-}
+/* .logo__img {
+    position: relative;
+    top: 50px;
+    left: 50px;
+} */
 
 .bg-wrapper {
-    background-color: #fff;
+    width: 49%;
+    background: url("../img/logo.svg") 50px 50px/ 150px auto no-repeat, url("../img/bg.jpg") 0 0/ auto 100% no-repeat;
 
 }
 
 .content-wrapper {
     display: flex;
     flex-direction: column;
-    padding-top: 90px;
-    padding-bottom: 0;
+    padding: 90px 0;
     width: 50%;
     background-color: #fff;
 }
@@ -165,7 +160,7 @@ body {
 .radio {
     display: flex;
     margin-left: 50px;
-    margin-bottom: 160px;
+    margin-bottom: 100px;
 }
 
 .radio__first,
